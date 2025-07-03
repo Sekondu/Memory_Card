@@ -1,0 +1,77 @@
+body{
+  display:flex;
+  justify-content: center;
+  background-color:#b0b2b1;
+  margin:0;
+  padding:0;
+}
+#root{
+  width:100%;
+  display:flex;
+  justify-content: center;
+}
+.container{
+  width:100%;
+}
+header{
+  display:flex;
+  width:100%;
+  flex-direction: column;
+  align-items: center;
+  margin-right:10px;
+  color:#4c505c;
+  background-color:#b0b2b1;
+}
+.header-score{
+  display:flex;
+  gap:30px;
+  font-size:20px;
+}
+img{
+  width:100%;
+  aspect-ratio: 1;
+}
+.character{
+  width:300px;
+  aspect-ratio: 1;
+}
+.mario{
+  width:100px;
+  aspect-ratio: 1;
+  position:absolute;
+  top:10%;
+  background-color: black;
+}
+.cards{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cards>*{
+  margin:10px 5px;
+  width:250px;
+  height:350px;
+  text-align: center;
+  background-color: #939393;
+  border:5px solid #939393;
+  color:#4c505c;
+  font-weight: 900;
+  font-size:20px;
+  border-radius:15px;
+}
+.cards>*:hover{
+  box-shadow:0 0 20px black;
+  animation:choose 0.2s linear forwards;
+}
+@keyframes choose{
+  from{
+    transform:scale(1);
+  }
+  to{
+    transform:scale(1.02);
+  }
+}
+.cards>*>img{
+  border-radius:15px;
+}
